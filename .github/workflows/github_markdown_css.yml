@@ -33,6 +33,5 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          token: ${{ secrets.PAT }}
           commit_message: "build: generate GitHub Markdown CSS"
           commit_options: "--signoff"
