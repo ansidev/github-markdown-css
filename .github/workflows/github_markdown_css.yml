@@ -33,4 +33,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "build: generate GitHub Markdown CSS"
-          commit_option: "--signoff"
+          commit_options: "--signoff"
