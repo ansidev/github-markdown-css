@@ -1,0 +1,36 @@
+name: GitHub Markdown CSS
+on:
+  # weekly
+  schedule:
+    - cron: "0 0 * * *"
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: generate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node environment
+        uses: actions/setup-node@v3
+
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Generate CSS
+        run: sh generate.sh
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "build: generate GitHub Markdown CSS"
+          commit_option: "--signoff"
