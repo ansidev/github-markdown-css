@@ -175,6 +175,11 @@
   text-decoration: underline;
 }
 
+.markdown-body ::placeholder {
+  color: #636e7b;
+  opacity: 1;
+}
+
 .markdown-body hr::before {
   display: table;
   content: "";
@@ -351,11 +356,6 @@
   overflow: visible !important;
   vertical-align: text-bottom;
   fill: currentColor;
-}
-
-.markdown-body ::placeholder {
-  color: #636e7b;
-  opacity: 1;
 }
 
 .markdown-body input::-webkit-outer-spin-button,
@@ -686,6 +686,7 @@
   padding: .2em .4em;
   margin: 0;
   font-size: 85%;
+  white-space: break-spaces;
   background-color: rgba(99,110,123,0.4);
   border-radius: 6px;
 }
@@ -993,7 +994,7 @@
 }
 
 .markdown-body .task-list-item-checkbox {
-  margin: 0 .2em .25em -1.6em;
+  margin: 0 .2em .25em -1.4em;
   vertical-align: middle;
 }
 
@@ -1003,7 +1004,6 @@
 
 .markdown-body .contains-task-list {
   position: relative;
-  list-style-type: none;
 }
 
 .markdown-body .contains-task-list:hover .task-list-item-convert-container,
