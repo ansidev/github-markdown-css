@@ -1002,6 +1002,14 @@
   clip: auto;
 }
 
+.markdown-body .QueryBuilder .qb-entity {
+  color: #dcbdfb;
+}
+
+.markdown-body .QueryBuilder .qb-constant {
+  color: #6cb6ff;
+}
+
 .markdown-body ::-webkit-calendar-picker-indicator {
   filter: invert(50%);
 }
