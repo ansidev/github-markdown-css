@@ -566,6 +566,10 @@
   border: 1px solid #30363d;
 }
 
+.markdown-body table td>:last-child {
+  margin-bottom: 0;
+}
+
 .markdown-body table tr {
   background-color: #0d1117;
   border-top: 1px solid #21262d;
@@ -732,6 +736,7 @@
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
+  color: #c9d1d9;
   background-color: #161b22;
   border-radius: 6px;
 }
@@ -822,6 +827,24 @@
 
 .markdown-body .footnotes .data-footnote-backref g-emoji {
   font-family: monospace;
+}
+
+.markdown-body [popover] {
+  background: canvas;
+  border: solid;
+  color: canvastext;
+  height: fit-content;
+  inset: 0;
+  margin: auto;
+  overflow: auto;
+  padding: .25em;
+  position: fixed;
+  width: fit-content;
+  z-index: 2147483647;
+}
+
+.markdown-body [popover][anchor] {
+  inset: auto;
 }
 
 .markdown-body .pl-c {
