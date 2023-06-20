@@ -844,10 +844,6 @@
   z-index: 2147483647;
 }
 
-.markdown-body [popover][anchor] {
-  inset: auto;
-}
-
 .markdown-body .pl-c {
   color: #66707b;
 }
