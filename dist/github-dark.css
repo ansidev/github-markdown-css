@@ -832,17 +832,32 @@
 }
 
 .markdown-body [popover] {
-  background: canvas;
-  border: solid;
-  color: canvastext;
-  height: fit-content;
-  inset: 0;
-  margin: auto;
-  overflow: auto;
-  padding: .25em;
   position: fixed;
-  width: fit-content;
   z-index: 2147483647;
+  inset: 0;
+  padding: .25em;
+  width: fit-content;
+  height: fit-content;
+  border-width: initial;
+  border-color: initial;
+  border-image: initial;
+  border-style: solid;
+  background-color: canvas;
+  color: canvastext;
+  overflow: auto;
+  margin: auto;
+}
+
+.markdown-body [popover]:not(.\:popover-open) {
+  display: none;
+}
+
+.markdown-body [popover]:is(dialog[open]) {
+  display: revert;
+}
+
+.markdown-body [anchor].\:popover-open {
+  inset: auto;
 }
 
 .markdown-body .pl-c {
