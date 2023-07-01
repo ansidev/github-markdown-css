@@ -831,20 +831,19 @@
 }
 
 .markdown-body [popover] {
-  position: fixed;
-  z-index: 2147483647;
-  inset: 0;
-  padding: .25em;
-  width: fit-content;
-  height: fit-content;
-  border-width: initial;
+  background-color: canvas;
+  border: initial solid;
   border-color: initial;
   border-image: initial;
-  border-style: solid;
-  background-color: canvas;
   color: canvastext;
-  overflow: auto;
+  height: fit-content;
+  inset: 0;
   margin: auto;
+  overflow: auto;
+  padding: .25em;
+  position: fixed;
+  width: fit-content;
+  z-index: 2147483647;
 }
 
 .markdown-body [popover]:not(.\:popover-open) {
