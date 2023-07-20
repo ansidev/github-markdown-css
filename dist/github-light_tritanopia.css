@@ -835,7 +835,7 @@
   border: initial solid;
   border-color: initial;
   border-image: initial;
-  color: canvastext;
+  color: initial;
   height: fit-content;
   inset: 0;
   margin: auto;
