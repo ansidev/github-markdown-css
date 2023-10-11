@@ -5,8 +5,8 @@
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   margin: 0;
-  color: var(--fgColor-default, var(--color-fg-default));
-  background-color: var(--bgColor-default, var(--color-canvas-default));
+  color: #f0f3f6;
+  background-color: #0a0c10;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
   font-size: 16px;
   line-height: 1.5;
@@ -50,7 +50,7 @@
 
 .markdown-body a {
   background-color: transparent;
-  color: var(--fgColor-accent, var(--color-accent-fg));
+  color: #71b7ff;
   text-decoration: none;
 }
 
@@ -74,12 +74,12 @@
   font-weight: 600;
   padding-bottom: .3em;
   font-size: 2em;
-  border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));
+  border-bottom: 1px solid #7a828e;
 }
 
 .markdown-body mark {
-  background-color: var(--bgColor-attention-muted, var(--color-attention-subtle));
-  color: var(--fgColor-default, var(--color-fg-default));
+  background-color: rgba(224,155,19,0.15);
+  color: #f0f3f6;
 }
 
 .markdown-body small {
@@ -106,7 +106,7 @@
   border-style: none;
   max-width: 100%;
   box-sizing: content-box;
-  background-color: var(--bgColor-default, var(--color-canvas-default));
+  background-color: #0a0c10;
 }
 
 .markdown-body code,
@@ -125,11 +125,11 @@
   box-sizing: content-box;
   overflow: hidden;
   background: transparent;
-  border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));
+  border-bottom: 1px solid #7a828e;
   height: .25em;
   padding: 0;
   margin: 24px 0;
-  background-color: var(--borderColor-default, var(--color-border-default));
+  background-color: #7a828e;
   border: 0;
 }
 
@@ -179,7 +179,7 @@
 }
 
 .markdown-body ::placeholder {
-  color: var(--fgColor-muted, var(--color-fg-subtle));
+  color: #9ea7b3;
   opacity: 1;
 }
 
@@ -220,7 +220,7 @@
 .markdown-body [role=button]:focus,
 .markdown-body input[type=radio]:focus,
 .markdown-body input[type=checkbox]:focus {
-  outline: 2px solid var(--focus-outlineColor, var(--color-accent-fg));
+  outline: 2px solid #71b7ff;
   outline-offset: -2px;
   box-shadow: none;
 }
@@ -236,7 +236,7 @@
 .markdown-body [role=button]:focus-visible,
 .markdown-body input[type=radio]:focus-visible,
 .markdown-body input[type=checkbox]:focus-visible {
-  outline: 2px solid var(--focus-outlineColor, var(--color-accent-fg));
+  outline: 2px solid #71b7ff;
   outline-offset: -2px;
   box-shadow: none;
 }
@@ -255,13 +255,13 @@
   padding: 3px 5px;
   font: 11px ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
   line-height: 10px;
-  color: var(--fgColor-default, var(--color-fg-default));
+  color: #f0f3f6;
   vertical-align: middle;
-  background-color: var(--bgColor-muted, var(--color-canvas-subtle));
-  border: solid 1px var(--borderColor-neutral-muted, var(--color-neutral-muted));
-  border-bottom-color: var(--borderColor-neutral-muted, var(--color-neutral-muted));
+  background-color: #272b33;
+  border: solid 1px rgba(158,167,179,0.4);
+  border-bottom-color: rgba(158,167,179,0.4);
   border-radius: 6px;
-  box-shadow: inset 0 -1px 0 var(--borderColor-neutral-muted, var(--color-neutral-muted));
+  box-shadow: inset 0 -1px 0 rgba(158,167,179,0.4);
 }
 
 .markdown-body h1,
@@ -280,7 +280,7 @@
   font-weight: 600;
   padding-bottom: .3em;
   font-size: 1.5em;
-  border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));
+  border-bottom: 1px solid #7a828e;
 }
 
 .markdown-body h3 {
@@ -301,7 +301,7 @@
 .markdown-body h6 {
   font-weight: 600;
   font-size: .85em;
-  color: var(--fgColor-muted, var(--color-fg-muted));
+  color: #f0f3f6;
 }
 
 .markdown-body p {
@@ -312,8 +312,8 @@
 .markdown-body blockquote {
   margin: 0;
   padding: 0 1em;
-  color: var(--fgColor-muted, var(--color-fg-muted));
-  border-left: .25em solid var(--borderColor-default, var(--color-border-default));
+  color: #f0f3f6;
+  border-left: .25em solid #7a828e;
 }
 
 .markdown-body ul,
@@ -393,7 +393,7 @@
 }
 
 .markdown-body .absent {
-  color: var(--fgColor-danger, var(--color-danger-fg));
+  color: #ff6a69;
 }
 
 .markdown-body .anchor {
@@ -433,7 +433,7 @@
 .markdown-body h4 .octicon-link,
 .markdown-body h5 .octicon-link,
 .markdown-body h6 .octicon-link {
-  color: var(--fgColor-default, var(--color-fg-default));
+  color: #f0f3f6;
   vertical-align: middle;
   visibility: hidden;
 }
@@ -566,7 +566,7 @@
 .markdown-body table th,
 .markdown-body table td {
   padding: 6px 13px;
-  border: 1px solid var(--borderColor-default, var(--color-border-default));
+  border: 1px solid #7a828e;
 }
 
 .markdown-body table td>:last-child {
@@ -574,12 +574,12 @@
 }
 
 .markdown-body table tr {
-  background-color: var(--bgColor-default, var(--color-canvas-default));
-  border-top: 1px solid var(--borderColor-muted, var(--color-border-muted));
+  background-color: #0a0c10;
+  border-top: 1px solid #7a828e;
 }
 
 .markdown-body table tr:nth-child(2n) {
-  background-color: var(--bgColor-muted, var(--color-canvas-subtle));
+  background-color: #272b33;
 }
 
 .markdown-body table img {
@@ -612,7 +612,7 @@
   padding: 7px;
   margin: 13px 0 0;
   overflow: hidden;
-  border: 1px solid var(--borderColor-default, var(--color-border-default));
+  border: 1px solid #7a828e;
 }
 
 .markdown-body span.frame span img {
@@ -624,7 +624,7 @@
   display: block;
   padding: 5px 0 0;
   clear: both;
-  color: var(--fgColor-default, var(--color-fg-default));
+  color: #f0f3f6;
 }
 
 .markdown-body span.align-center {
@@ -694,7 +694,7 @@
   margin: 0;
   font-size: 85%;
   white-space: break-spaces;
-  background-color: var(--bgColor-neutral-muted, var(--color-neutral-muted));
+  background-color: rgba(158,167,179,0.4);
   border-radius: 6px;
 }
 
@@ -739,8 +739,8 @@
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  color: var(--fgColor-default, var(--color-fg-default));
-  background-color: var(--bgColor-muted, var(--color-canvas-subtle));
+  color: #f0f3f6;
+  background-color: #272b33;
   border-radius: 6px;
 }
 
@@ -770,7 +770,7 @@
 .markdown-body .csv-data .blob-num {
   padding: 10px 8px 9px;
   text-align: right;
-  background: var(--bgColor-default, var(--color-canvas-default));
+  background: #0a0c10;
   border: 0;
 }
 
@@ -780,7 +780,7 @@
 
 .markdown-body .csv-data th {
   font-weight: 600;
-  background: var(--bgColor-muted, var(--color-canvas-subtle));
+  background: #272b33;
   border-top: 0;
 }
 
@@ -794,8 +794,8 @@
 
 .markdown-body .footnotes {
   font-size: 12px;
-  color: var(--fgColor-muted, var(--color-fg-muted));
-  border-top: 1px solid var(--borderColor-default, var(--color-border-default));
+  color: #f0f3f6;
+  border-top: 1px solid #7a828e;
 }
 
 .markdown-body .footnotes ol {
@@ -820,12 +820,12 @@
   left: -24px;
   pointer-events: none;
   content: "";
-  border: 2px solid var(--borderColor-accent-emphasis, var(--color-accent-emphasis));
+  border: 2px solid #409eff;
   border-radius: 6px;
 }
 
 .markdown-body .footnotes li:target {
-  color: var(--fgColor-default, var(--color-fg-default));
+  color: #f0f3f6;
 }
 
 .markdown-body .footnotes .data-footnote-backref g-emoji {
