@@ -832,34 +832,6 @@
   font-family: monospace;
 }
 
-.markdown-body [popover] {
-  background-color: canvas;
-  border: initial solid;
-  border-color: initial;
-  border-image: initial;
-  color: initial;
-  height: fit-content;
-  inset: 0;
-  margin: auto;
-  overflow: auto;
-  padding: .25em;
-  position: fixed;
-  width: fit-content;
-  z-index: 2147483647;
-}
-
-.markdown-body [popover]:not(.\:popover-open) {
-  display: none;
-}
-
-.markdown-body [popover]:is(dialog[open]) {
-  display: revert;
-}
-
-.markdown-body [anchor].\:popover-open {
-  inset: auto;
-}
-
 .markdown-body .pl-c {
   color: #768390;
 }
